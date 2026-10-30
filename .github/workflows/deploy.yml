@@ -1,0 +1,11 @@
+name: deploy
+on: push
+
+permissions: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    step:
+      - uses: actions/checkout@v7
+      - run: make
