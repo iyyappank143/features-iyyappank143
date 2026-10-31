@@ -37,6 +37,7 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
+        enviroment: prod
 
       - name: Create .env file
         run: |
