@@ -21,7 +21,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-        - name: Create .env file
+      - name: Create .env file
         run: |
           echo "PORT=8080" >> .env.development
           echo "APP=GHA-NODE-DEV-APP" >> .env.development
@@ -35,3 +35,4 @@ jobs:
           curl http://localhost:8080
           curl http://localhost:8080/health
           pkill -f "node app.js"
+          
