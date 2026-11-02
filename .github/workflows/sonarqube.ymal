@@ -19,6 +19,6 @@ jobs:
           args: >
              -Dsonar.projectKey=NodeApplication
              -Dsonar.sources=.
-             -Dsonar.host.url=${{ vars.SONAR_HOST_URL }}
+             -Dsonar.host.url={{ vars.SONAR_HOST_URL }}
              -Dsonar.token=${{ secrets.SONAR_TOKEN }}
              -Dsonar.qualitygate.wait=true
