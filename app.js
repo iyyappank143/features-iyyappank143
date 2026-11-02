@@ -28,3 +28,4 @@ app.get('/health', (req, res) => {
 app.listen(PORT , (req, res) => {
 	log("Server is running on PORT " + PORT);
 });
+ 
