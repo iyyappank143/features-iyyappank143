@@ -1,0 +1,9 @@
+#Default owner for all files
+@iyyappank143
+
+#Application code
+/src/* @iyyappank143 #Backend Team
+
+Dockerfile* @iyyappank143 #DevOps Team
+
+.github/* @iyyappank143
