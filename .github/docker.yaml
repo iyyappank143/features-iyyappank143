@@ -20,10 +20,4 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -f Dockerfile.distroless -t dockerfile-distroless .
-
-      - name: Tag and Push Docker image
-        run: |
-          SHORT_SHA=${GITHUB_SHA::7}
-          docker tag dockerfile-distroless ${{ vars.DOCKERHUB_USERNAME }}/nodeapp8:$SHORT_SHA
-          docker push ${{ vars.DOCKERHUB_USERNAME }}/nodeapp8:$SHORT_SHA 
+      
